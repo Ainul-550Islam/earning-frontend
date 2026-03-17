@@ -22,7 +22,7 @@ const Login = () => {
     if (!username || !password) { toast.error('Please fill in all fields'); return; }
     try {
       setLoading(true);
-      const res = await client.post('/auth/login/', { username: username, password });
+      const res = await client.post('/auth/login/', { username_or_email: username, password });
       const token = res.data.token || res.data.tokens?.access || res.data.access || res.data.tokens?.token;
       if (token) {
         localStorage.setItem('adminAccessToken', token);
