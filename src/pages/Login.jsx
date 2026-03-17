@@ -23,7 +23,7 @@ const Login = () => {
     try {
       setLoading(true);
       const res = await client.post('/auth/login/', { username_or_email: username, password });
-      const token = res.data.token || res.data.tokens?.access || res.data.access || res.data.tokens?.token;
+      const token = res.data.tokens?.access || res.data.token || res.data.access;
       if (token) {
         localStorage.setItem('adminAccessToken', token);
         localStorage.setItem('token', token);
