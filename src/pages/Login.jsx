@@ -23,9 +23,10 @@ const Login = () => {
     try {
       setLoading(true);
       const res = await client.post('/auth/login/', { username: username, password });
-      const token = res.data.token || res.data.tokens?.access || res.data.access;
+      const token = res.data.token || res.data.tokens?.access || res.data.access || res.data.tokens?.token;
       if (token) {
         localStorage.setItem('adminAccessToken', token);
+        localStorage.setItem('token', token);
         if (res.data.tokens?.refresh || res.data.refresh) {
           localStorage.setItem('adminRefreshToken', res.data.tokens?.refresh || res.data.refresh);
         }
