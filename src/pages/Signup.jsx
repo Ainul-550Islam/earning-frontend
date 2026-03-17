@@ -22,7 +22,7 @@ const Signup = () => {
     if (form.password.length < 6) { toast.error('Password must be at least 6 characters'); return; }
     try {
       setLoading(true);
-      await client.post('/auth/register/', form);
+      await client.post('/auth/register/', {...form, password_confirm: form.confirm_password});
       toast.success('Account created! Please login.');
       setTimeout(() => navigate('/login'), 1000);
     } catch (err) {
