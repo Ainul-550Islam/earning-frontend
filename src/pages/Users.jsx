@@ -99,7 +99,7 @@ const VSlider = ({ defaultVal = 55 }) => {
    CREATE USER MODAL
 ══════════════════════════════════ */
 const CreateUserModal = ({ onClose, onCreated }) => {
-  const [form, setForm] = useState({ phone: '', email: '', password: '', username: '' });
+  const [form, setForm] = useState({ phone: '', email: '', password: '', username: '', device_id: 'admin-created-' + Date.now() });
   const [loading, setLoading] = useState(false);
 
   const handleCreate = async () => {
