@@ -13,6 +13,16 @@ const Login = () => {
   const [showPass, setShowPass] = useState(false);
   const [remember, setRemember] = useState(true);
   const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get('error');
+    if (error === 'email_already_registered') {
+      toast.error('This Gmail is already registered! Please login instead.');
+    } else if (error === 'token_failed') {
+      toast.error('Google login failed. Please try again.');
+    }
+  }, []);
   const navigate = useNavigate();
 
   useEffect(() => { setTimeout(() => setMounted(true), 80); }, []);
