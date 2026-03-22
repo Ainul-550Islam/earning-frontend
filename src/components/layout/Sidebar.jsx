@@ -76,6 +76,7 @@ const NAV = [
       { icon: Database,        label: 'Backup',           path: 'backup' },
       { icon: Lock,            label: 'Rate Limit',       path: 'rate-limit' },
       { icon: Settings,        label: 'Admin Panel',      path: 'settings' },
+      { icon: Zap,             label: 'Endpoint Control',  path: 'endpoint-control' },
       { icon: FlaskConical,    label: 'Tests',            path: 'tests' },
       { icon: Megaphone,       label: 'Promotions',       path: 'promotions' },
     ]
@@ -116,6 +117,7 @@ export default function Sidebar({ user, onWidthChange }) {
   const [hidden,    setHidden]    = useState(false);   // true = slide out
   const [collapsed, setCollapsed] = useState({});      // section collapse
   const [colorOffset, setColorOffset] = useState(0);
+  const [pinned, setPinned] = useState(() => sessionStorage.getItem('sb-pin') === '1');
 
   /* ── Color cycle ── */
   useEffect(() => {
@@ -148,16 +150,17 @@ export default function Sidebar({ user, onWidthChange }) {
   /* ── Hover → expand, mouse সরালে → collapse ── */
   const hoverTimer = useRef(null);
   const handleMouseEnter = () => {
-    if (hidden) return;
+    if (hidden || pinned) return;
     clearTimeout(hoverTimer.current);
     hoverTimer.current = setTimeout(() => setExpanded(true), 60);
   };
   const handleMouseLeave = () => {
-    if (hidden) return;
+    if (hidden || pinned) return;
     clearTimeout(hoverTimer.current);
     hoverTimer.current = setTimeout(() => setExpanded(false), 150);
   };
 
+  const togglePin = () => setPinned(p => { const n=!p; sessionStorage.setItem('sb-pin',n?'1':'0'); if(n) setExpanded(true); return n; });
   /* ── Active path ── */
   const activePath = location.pathname.replace('/', '') || '';
   const toggleSection = (s) => setCollapsed(p => ({ ...p, [s]: !p[s] }));
@@ -204,6 +207,7 @@ export default function Sidebar({ user, onWidthChange }) {
           >
             <AlignJustify style={{ width: 15, height: 15, color: expanded ? '#a855f7' : '#4a2a6a' }} />
           </button>
+          <button onClick={togglePin} title={pinned?'Hover mode':'Pin open'} style={{background:'none',border:'none',cursor:'pointer',padding:'4px',display:'flex',alignItems:'center'}}><Lock size={12} style={{color:pinned?'#00f5ff':'#4a2a6a'}}/></button>
 
           {/* Logo — শুধু expanded এ */}
           {expanded && (
@@ -627,6 +631,7 @@ const SIDEBAR_CSS = `
 //       { icon: Database,        label: 'Backup',           path: 'backup' },
 //       { icon: Lock,            label: 'Rate Limit',       path: 'rate-limit' },
 //       { icon: Settings,        label: 'Admin Panel',      path: 'settings' },
+//      { icon: Zap,             label: 'Endpoint Control',  path: 'endpoint-control' },
 //       { icon: FlaskConical,    label: 'Tests',            path: 'tests' },
 //       { icon: Megaphone,       label: 'Promotions',       path: 'promotions' },
 //     ]
@@ -638,6 +643,7 @@ const SIDEBAR_CSS = `
 //   const location   = useLocation();
 //   const [collapsed, setCollapsed] = useState({});
 //   const [colorOffset, setColorOffset] = useState(0);
+  const [pinned, setPinned] = useState(() => sessionStorage.getItem('sb-pin') === '1');
 
 //   useEffect(() => {
 //     const timer = setInterval(() => {
