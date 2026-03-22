@@ -667,7 +667,7 @@ const SIDEBAR_CSS = `
 //   const location   = useLocation();
 //   const [collapsed, setCollapsed] = useState({});
 //   const [colorOffset, setColorOffset] = useState(0);
-  const [pinned, setPinned] = useState(false);
+//   const [pinned, setPinned] = useState(false);
 
 //   useEffect(() => {
 //     const timer = setInterval(() => {
