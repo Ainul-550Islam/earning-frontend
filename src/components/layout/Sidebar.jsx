@@ -76,7 +76,7 @@ const NAV = [
       { icon: Database,        label: 'Backup',           path: 'backup' },
       { icon: Lock,            label: 'Rate Limit',       path: 'rate-limit' },
       { icon: Settings,        label: 'Admin Panel',      path: 'settings' },
-      { icon: Zap,             label: 'Endpoint Control',  path: 'endpoint-control' },
+
       { icon: FlaskConical,    label: 'Tests',            path: 'tests' },
       { icon: Megaphone,       label: 'Promotions',       path: 'promotions' },
     ]
@@ -631,7 +631,7 @@ const SIDEBAR_CSS = `
 //       { icon: Database,        label: 'Backup',           path: 'backup' },
 //       { icon: Lock,            label: 'Rate Limit',       path: 'rate-limit' },
 //       { icon: Settings,        label: 'Admin Panel',      path: 'settings' },
-//      { icon: Zap,             label: 'Endpoint Control',  path: 'endpoint-control' },
+//
 //       { icon: FlaskConical,    label: 'Tests',            path: 'tests' },
 //       { icon: Megaphone,       label: 'Promotions',       path: 'promotions' },
 //     ]
