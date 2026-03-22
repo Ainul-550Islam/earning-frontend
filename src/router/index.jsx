@@ -106,7 +106,7 @@ const router = createBrowserRouter([
           { path: 'behavior-analytics', element: <BehaviorAnalytics /> },
           { path: 'gamification',       element: <Gamification /> },
           { path: 'subscriptions',      element: <Subscriptions /> },
-          { path: 'endpoint-control',    element: <EndpointControl /> },
+          { path: 'endpoint-control',    element: <React.Suspense fallback={<div>Loading...</div>}><EndpointControl /></React.Suspense> },
           
           { path: '*',                    element: <Navigate to="/" replace /> },
         ],
