@@ -49,7 +49,7 @@ import AutoMod          from '../pages/AutoMod';
 import BehaviorAnalytics from '../pages/BehaviorAnalytics';
 import Gamification     from '../pages/Gamification';
 import Subscriptions    from '../pages/SubscriptionPage';
-import EndpointControl  from '../pages/EndpointControl';
+const EndpointControl = React.lazy(() => import('../pages/EndpointControl'));
 
 
 
