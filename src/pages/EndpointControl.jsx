@@ -14,32 +14,42 @@ const METHOD_COLORS = {
   DELETE: { bg: "rgba(61,10,10,0.9)",  text: "#ff3355", border: "#8a0a1a", glow: "#ff3355" },
 };
 
-// ── Real API calls ──────────────────────────────────────────
+// key = method::path (unique combination)
+const epKey = (method, path) => method + "::" + path;
+
+// ── Real API ─────────────────────────────────────────────
 const api = {
   load: async () => {
     const res = await axiosInstance.get("/admin-panel/endpoint-toggles/");
     const list = res.data?.results ?? (Array.isArray(res.data) ? res.data : []);
     const map = {};
-    list.forEach(t => { map[t.method + "::" + t.path] = { id: t.id, is_enabled: t.is_enabled }; });
+    // key by method::path so GET /api/x and POST /api/x are separate
+    list.forEach(t => {
+      map[epKey(t.method, t.path)] = { id: t.id, is_enabled: t.is_enabled };
+    });
     return map;
   },
+
   patch: async (id, is_enabled) => {
     const r = await axiosInstance.patch(`/admin-panel/endpoint-toggles/${id}/`, { is_enabled });
     return r.data;
   },
+
   create: async (payload) => {
     const r = await axiosInstance.post("/admin-panel/endpoint-toggles/", payload);
     return r.data;
   },
+
   bulk: async (toggles) => {
-    for (let i = 0; i < toggles.length; i += 200)
+    for (let i = 0; i < toggles.length; i += 200) {
       await axiosInstance.post("/admin-panel/endpoint-toggles/bulk_toggle/", {
         toggles: toggles.slice(i, i + 200)
       });
+    }
   },
 };
 
-// ── Toggle Switch ────────────────────────────────────────────
+// ── Toggle Switch ─────────────────────────────────────────
 function Toggle({ on, busy, onToggle }) {
   return (
     <div className={"ec-sw " + (on ? "ec-sw--on" : "")}
@@ -50,96 +60,122 @@ function Toggle({ on, busy, onToggle }) {
   );
 }
 
-// ── Method Badge ─────────────────────────────────────────────
+// ── Method Badge ──────────────────────────────────────────
 function Badge({ method }) {
   const c = METHOD_COLORS[method] || METHOD_COLORS.GET;
   return (
     <span className="ec-badge"
-      style={{ background: c.bg, color: c.text, borderColor: c.border, boxShadow: `0 0 6px ${c.glow}44` }}>
+      style={{ background: c.bg, color: c.text, borderColor: c.border,
+        boxShadow: `0 0 6px ${c.glow}44` }}>
       {method}
     </span>
   );
 }
 
-// ════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 export default function EndpointControl() {
-  const [tab, setTab]             = useState("groups");
-  const [epStates, setEpStates]   = useState({});
-  const [loading, setLoading]     = useState(true);
-  const [saving, setSaving]       = useState({});
-  const [toast, setToast]         = useState(null);
-  const [search, setSearch]       = useState("");
-  const [mFilter, setMFilter]     = useState("ALL");
-  const [gFilter, setGFilter]     = useState("ALL");
-  const [selGroup, setSelGroup]   = useState(null);
-  const [page, setPage]           = useState(1);
+  const [tab, setTab]           = useState("groups");
+  const [epStates, setEpStates] = useState({});
+  const [loading, setLoading]   = useState(true);
+  const [saving, setSaving]     = useState({});
+  const [toast, setToast]       = useState(null);
+  const [search, setSearch]     = useState("");
+  const [mFilter, setMFilter]   = useState("ALL");
+  const [gFilter, setGFilter]   = useState("ALL");
+  const [selGroup, setSelGroup] = useState(null);
+  const [page, setPage]         = useState(1);
   const PG = 60;
 
-  const toast$ = useCallback((msg, type = "success") => {
+  const showToast = useCallback((msg, type = "success") => {
     setToast({ msg, type });
     setTimeout(() => setToast(null), 3500);
   }, []);
 
-  // Load states
+  // Load all toggle states
   useEffect(() => {
     api.load()
       .then(map => setEpStates(map))
-      .catch(e => toast$("Load error: " + e.message, "error"))
+      .catch(e => showToast("Load error: " + e.message, "error"))
       .finally(() => setLoading(false));
   }, []);
 
-  const isOn = (method, path) => epStates[method + "::" + path]?.is_enabled !== false;
+  const isOn = (method, path) =>
+    epStates[epKey(method, path)]?.is_enabled !== false;
 
-  // Single toggle
+  // ── Single endpoint toggle ────────────────────────────
   const doToggle = async (ep) => {
-    const k = ep.method + "::" + ep.path;
+    const k    = epKey(ep.method, ep.path);
     const next = !isOn(ep.method, ep.path);
     setSaving(p => ({ ...p, [k]: true }));
     try {
       const ex = epStates[k];
-      const r = ex?.id
-        ? await api.patch(ex.id, next)
-        : await api.create({ path: ep.path, method: ep.method, group: ep.group,
-            label: ep.groupLabel || ep.path, is_enabled: next,
-            disabled_message: "This feature is temporarily disabled." });
+      let r;
+      if (ex?.id) {
+        r = await api.patch(ex.id, next);
+      } else {
+        r = await api.create({
+          path: ep.path,
+          method: ep.method,
+          group: ep.group,
+          label: ep.groupLabel || ep.path,
+          is_enabled: next,
+          disabled_message: "This feature is temporarily disabled.",
+        });
+      }
       setEpStates(p => ({ ...p, [k]: { id: r.id, is_enabled: next } }));
-      toast$((next ? "✓ ENABLED" : "✕ DISABLED") + ": " + ep.method + " " + ep.path);
-    } catch(e) { toast$("Error: " + e.message, "error"); }
-    finally { setSaving(p => ({ ...p, [k]: false })); }
+      showToast((next ? "✓ ENABLED" : "✕ DISABLED") + ": " + ep.method + " " + ep.path);
+    } catch(e) {
+      showToast("Error: " + e.message, "error");
+    } finally {
+      setSaving(p => ({ ...p, [k]: false }));
+    }
   };
 
-  // Bulk toggle
+  // ── Bulk toggle ───────────────────────────────────────
   const doBulk = async (eps, label, next) => {
     try {
       await api.bulk(eps.map(ep => ({
-        path: ep.path, method: ep.method,
+        path: ep.path,
+        method: ep.method,
         group: ep.group || ep.key,
         label: ep.groupLabel || label,
         is_enabled: next,
-        disabled_message: "Temporarily disabled.",
+        disabled_message: next
+          ? "Feature enabled."
+          : "This feature is temporarily disabled.",
       })));
       setEpStates(p => {
         const n = { ...p };
-        eps.forEach(ep => { n[ep.method + "::" + ep.path] = { ...p[ep.method + "::" + ep.path], is_enabled: next }; });
+        eps.forEach(ep => {
+          const k = epKey(ep.method, ep.path);
+          n[k] = { ...p[k], is_enabled: next };
+        });
         return n;
       });
-      toast$((next ? "✓ ENABLED: " : "✕ DISABLED: ") + label);
-    } catch(e) { toast$("Bulk error: " + e.message, "error"); }
+      showToast((next ? "✓ ENABLED: " : "✕ DISABLED: ") + label);
+    } catch(e) {
+      showToast("Bulk error: " + e.message, "error");
+    }
   };
 
-  const doAll = n => doBulk(ALL_ENDPOINTS, "All " + TOTAL + " Endpoints", n);
+  const doAll   = n => doBulk(ALL_ENDPOINTS, "All " + TOTAL + " Endpoints", n);
   const doGroup = (g, n) => doBulk(
-    g.endpoints.map(ep => ({ ...ep, group: g.key, groupLabel: g.label })), g.label, n
+    g.endpoints.map(ep => ({ ...ep, group: g.key, groupLabel: g.label })),
+    g.label, n
   );
 
+  // ── Counts ────────────────────────────────────────────
   const totalActive = useMemo(
     () => ALL_ENDPOINTS.filter(ep => isOn(ep.method, ep.path)).length,
     [epStates]
   );
-  const gActive = g => g.endpoints.filter(ep => isOn(ep.method, ep.path)).length;
+
+  const gActive = g =>
+    g.endpoints.filter(ep => isOn(ep.method, ep.path)).length;
 
   const selGData = selGroup ? GROUPS.find(g => g.key === selGroup) : null;
 
+  // ── Filters ───────────────────────────────────────────
   const filtGroups = useMemo(() =>
     GROUPS.filter(g =>
       g.label.toLowerCase().includes(search.toLowerCase()) ||
@@ -168,15 +204,17 @@ export default function EndpointControl() {
   const paged = filtAll.slice((page-1)*PG, page*PG);
   useEffect(() => setPage(1), [search, mFilter, gFilter]);
 
-  // ── Endpoint Card (Image 2 style) ───────────────────────
+  // ── Endpoint Card ─────────────────────────────────────
   const EpCard = ({ ep }) => {
     const on   = isOn(ep.method, ep.path);
-    const busy = !!saving[ep.method + "::" + ep.path];
+    const busy = !!saving[epKey(ep.method, ep.path)];
     const mc   = METHOD_COLORS[ep.method] || METHOD_COLORS.GET;
     return (
       <div className={"ec-ep-card" + (on ? " ec-ep-on" : " ec-ep-off")}
-        style={{ borderColor: on ? mc.border : "#2a0808",
-          boxShadow: on ? `0 0 12px ${mc.glow}22` : "none" }}>
+        style={{
+          borderColor: on ? mc.border : "#2a0808",
+          boxShadow: on ? `0 0 12px ${mc.glow}22` : "none"
+        }}>
         <div className="ec-ep-left">
           <Badge method={ep.method} />
           <span className="ec-ep-path" title={ep.path}>{ep.path}</span>
@@ -195,7 +233,7 @@ export default function EndpointControl() {
     );
   };
 
-  // ── Group 3D Card (Image 1 style) ───────────────────────
+  // ── 3D Group Card ─────────────────────────────────────
   const GroupCard = ({ group }) => {
     const active = gActive(group);
     const total  = group.count;
@@ -205,23 +243,20 @@ export default function EndpointControl() {
     const pct    = total > 0 ? Math.round((active / total) * 100) : 100;
 
     return (
-      <div className={"ec-gcard" + (allOn ? " ec-gcard--on" : allOff ? " ec-gcard--off" : " ec-gcard--partial")}
-        onClick={() => group.endpoints.length > 0 && setSelGroup(group.key)}
-        style={{ "--glow": col }}>
-        {/* 3D shine effect */}
+      <div
+        className={"ec-gcard" + (allOn ? " ec-gcard--on" : allOff ? " ec-gcard--off" : " ec-gcard--partial")}
+        style={{ "--glow": col }}
+        onClick={() => group.endpoints.length > 0 && setSelGroup(group.key)}>
         <div className="ec-gcard-shine" />
-        {/* Status bar top */}
-        <div className="ec-gcard-bar" style={{ background: col, boxShadow: `0 0 8px ${col}` }} />
-        {/* Icon */}
+        <div className="ec-gcard-bar"
+          style={{ background: col, boxShadow: `0 0 8px ${col}` }} />
         <div className="ec-gcard-icon">{group.icon}</div>
-        {/* Name */}
         <div className="ec-gcard-name">{group.key}</div>
-        {/* Count badge */}
         <div className="ec-gcard-foot">
-          <span className="ec-gcard-dot" style={{ background: col, boxShadow: `0 0 6px ${col}` }} />
+          <span className="ec-gcard-dot"
+            style={{ background: col, boxShadow: `0 0 6px ${col}` }} />
           <span className="ec-gcard-count" style={{ color: col }}>{active}</span>
         </div>
-        {/* Progress arc */}
         <svg className="ec-gcard-arc" viewBox="0 0 36 36">
           <circle cx="18" cy="18" r="15" fill="none"
             stroke="rgba(255,255,255,0.06)" strokeWidth="2.5" />
@@ -236,22 +271,26 @@ export default function EndpointControl() {
     );
   };
 
-  // ════════════════════════════════════════════════════════
+  // ════════════════════════════════════════════════════
   return (
     <div className="ec-root">
 
-      {/* ── Header ── */}
+      {/* Header */}
       <div className="ec-header">
         <div className="ec-header-l">
           <div className="ec-hicon">⚡</div>
           <div>
             <h1 className="ec-htitle">API Endpoint Control</h1>
-            <p className="ec-hsub">Individual on/off control over all {TOTAL} API endpoints</p>
+            <p className="ec-hsub">
+              Individual on/off control over all {TOTAL} API endpoints
+            </p>
           </div>
         </div>
         <div className="ec-hbadge">
-          <span className="ec-hbadge-dot"
-            style={{ background: totalActive === TOTAL ? "#00ff88" : totalActive === 0 ? "#ff3355" : "#ff9500" }} />
+          <span className="ec-hbadge-dot" style={{
+            background: totalActive === TOTAL ? "#00ff88"
+              : totalActive === 0 ? "#ff3355" : "#ff9500"
+          }} />
           <div>
             <div className="ec-hnum">{totalActive} / {TOTAL}</div>
             <div className="ec-hlbl">ACTIVE</div>
@@ -259,28 +298,37 @@ export default function EndpointControl() {
         </div>
       </div>
 
-      {/* ── Tabs ── */}
+      {/* Tabs */}
       <div className="ec-tabs">
-        {[["groups","🗂️ GROUP VIEW", GROUPS.length],
-          ["endpoints","🔌 ALL ENDPOINTS", TOTAL]].map(([id, lbl, cnt]) => (
+        {[
+          ["groups",    "🗂️ GROUP VIEW",    GROUPS.length],
+          ["endpoints", "🔌 ALL ENDPOINTS", TOTAL],
+        ].map(([id, lbl, cnt]) => (
           <button key={id}
             className={"ec-tab" + (tab === id ? " ec-tab--on" : "")}
-            onClick={() => { setTab(id); setSelGroup(null); setSearch(""); setMFilter("ALL"); setGFilter("ALL"); }}>
+            onClick={() => {
+              setTab(id); setSelGroup(null);
+              setSearch(""); setMFilter("ALL"); setGFilter("ALL");
+            }}>
             {lbl} <span className="ec-tab-n">{cnt}</span>
           </button>
         ))}
       </div>
 
-      {/* ── Toolbar ── */}
+      {/* Toolbar */}
       <div className="ec-bar">
-        <button className="ec-btn ec-btn-en" onClick={() => doAll(true)}>✓ Enable All</button>
+        <button className="ec-btn ec-btn-en"  onClick={() => doAll(true)}>✓ Enable All</button>
         <button className="ec-btn ec-btn-dis" onClick={() => doAll(false)}>✕ Disable All</button>
 
         {tab === "groups" && selGData && (<>
-          <button className="ec-btn ec-btn-gen" onClick={() => doGroup(selGData, true)}>✓ Group ON</button>
-          <button className="ec-btn ec-btn-gdis" onClick={() => doGroup(selGData, false)}>✕ Group OFF</button>
+          <button className="ec-btn ec-btn-gen"
+            onClick={() => doGroup(selGData, true)}>✓ Group ON</button>
+          <button className="ec-btn ec-btn-gdis"
+            onClick={() => doGroup(selGData, false)}>✕ Group OFF</button>
           <button className="ec-btn ec-btn-back"
-            onClick={() => { setSelGroup(null); setSearch(""); setMFilter("ALL"); }}>← BACK</button>
+            onClick={() => { setSelGroup(null); setSearch(""); setMFilter("ALL"); }}>
+            ← BACK
+          </button>
         </>)}
 
         <div className="ec-mf">
@@ -292,15 +340,19 @@ export default function EndpointControl() {
                 style={mFilter === m && m !== "ALL"
                   ? { color: mc.text, borderColor: mc.border, background: mc.bg }
                   : {}}
-                onClick={() => setMFilter(m)}>{m}</button>
+                onClick={() => setMFilter(m)}>{m}
+              </button>
             );
           })}
         </div>
 
         {tab === "endpoints" && (
-          <select className="ec-sel" value={gFilter} onChange={e => setGFilter(e.target.value)}>
+          <select className="ec-sel" value={gFilter}
+            onChange={e => setGFilter(e.target.value)}>
             <option value="ALL">ALL GROUPS</option>
-            {GROUPS.map(g => <option key={g.key} value={g.key}>{g.icon} {g.label.toUpperCase()}</option>)}
+            {GROUPS.map(g => (
+              <option key={g.key} value={g.key}>{g.icon} {g.label.toUpperCase()}</option>
+            ))}
           </select>
         )}
 
@@ -312,7 +364,7 @@ export default function EndpointControl() {
         </div>
       </div>
 
-      {/* ── Content ── */}
+      {/* Content */}
       {loading ? (
         <div className="ec-load">
           <div className="ec-spin" />
@@ -320,13 +372,11 @@ export default function EndpointControl() {
         </div>
 
       ) : tab === "groups" && !selGData ? (
-        /* ── Group Grid (Image 1) ── */
         <div className="ec-ggrid">
           {filtGroups.map(g => <GroupCard key={g.key} group={g} />)}
         </div>
 
       ) : tab === "groups" && selGData ? (
-        /* ── Drill-down endpoint list ── */
         <div>
           <div className="ec-drill-hd">
             <span style={{ fontSize: 34 }}>{selGData.icon}</span>
@@ -340,14 +390,16 @@ export default function EndpointControl() {
           </div>
           <div className="ec-epgrid">
             {drillEps.map((ep, i) => (
-              <EpCard key={i} ep={{ ...ep, group: selGData.key, groupLabel: selGData.label }} />
+              <EpCard key={i}
+                ep={{ ...ep, group: selGData.key, groupLabel: selGData.label }} />
             ))}
-            {drillEps.length === 0 && <div className="ec-empty">NO ENDPOINTS MATCH</div>}
+            {drillEps.length === 0 && (
+              <div className="ec-empty">NO ENDPOINTS MATCH</div>
+            )}
           </div>
         </div>
 
       ) : (
-        /* ── All Endpoints Tab ── */
         <div>
           <div className="ec-ep-info">
             SHOWING <strong>{filtAll.length}</strong> OF {TOTAL} ENDPOINTS
@@ -358,23 +410,33 @@ export default function EndpointControl() {
           </div>
           {pages > 1 && (
             <div className="ec-pag">
-              <button className="ec-pb" disabled={page===1} onClick={() => setPage(1)}>«</button>
-              <button className="ec-pb" disabled={page===1} onClick={() => setPage(p=>p-1)}>‹</button>
-              {Array.from({length: Math.min(7, pages)}, (_,i) => {
+              <button className="ec-pb" disabled={page===1}
+                onClick={() => setPage(1)}>«</button>
+              <button className="ec-pb" disabled={page===1}
+                onClick={() => setPage(p => p-1)}>‹</button>
+              {Array.from({ length: Math.min(7, pages) }, (_, i) => {
                 const p = page <= 4 ? i+1 : page+i-3;
-                if (p<1||p>pages) return null;
-                return <button key={p} className={"ec-pb"+(p===page?" ec-pb--on":"")} onClick={() => setPage(p)}>{p}</button>;
+                if (p < 1 || p > pages) return null;
+                return (
+                  <button key={p}
+                    className={"ec-pb" + (p === page ? " ec-pb--on" : "")}
+                    onClick={() => setPage(p)}>{p}
+                  </button>
+                );
               })}
-              <button className="ec-pb" disabled={page===pages} onClick={() => setPage(p=>p+1)}>›</button>
-              <button className="ec-pb" disabled={page===pages} onClick={() => setPage(pages)}>»</button>
+              <button className="ec-pb" disabled={page===pages}
+                onClick={() => setPage(p => p+1)}>›</button>
+              <button className="ec-pb" disabled={page===pages}
+                onClick={() => setPage(pages)}>»</button>
             </div>
           )}
         </div>
       )}
 
-      {/* ── Toast ── */}
+      {/* Toast */}
       {toast && (
-        <div className={"ec-toast" + (toast.type==="error" ? " ec-toast--err" : " ec-toast--ok")}>
+        <div className={"ec-toast" +
+          (toast.type === "error" ? " ec-toast--err" : " ec-toast--ok")}>
           {toast.msg}
         </div>
       )}
