@@ -1,0 +1,8106 @@
+[
+  {
+    "key": "GatewayTransactions",
+    "label": "Gatewaytransactions",
+    "icon": "[GT]",
+    "count": 2,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/GatewayTransactions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/GatewayTransactions/{id}/"
+      }
+    ]
+  },
+  {
+    "key": "ad-networks",
+    "label": "Ad Networks",
+    "icon": "[AD]",
+    "count": 87,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/blacklisted-ips/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/blacklisted-ips/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/blacklisted-ips/check/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/blacklisted-ips/cleanup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/blacklisted-ips/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/categories/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/categories/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/categories/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/categories/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/categories/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/categories/{id}/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/conversions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/conversions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/conversions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/conversions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/conversions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/conversions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/conversions/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/conversions/{id}/reject/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/conversions/bulk_approve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/engagements/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/engagements/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/engagements/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/engagements/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/engagements/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/engagements/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/engagements/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/engagements/{id}/complete/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/engagements/{id}/reject/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/engagements/history/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/engagements/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/fraud-rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/fraud-rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/known-bad-ips/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/known-bad-ips/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/networks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/networks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/networks/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/networks/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/networks/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/networks/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/networks/{id}/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/networks/{id}/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/networks/{id}/sync/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/networks/{id}/sync_offers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/networks/{id}/toggle_status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/networks/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/networks/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/networks/top_networks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/offers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/offers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/offers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/offers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/offers/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/offers/{id}/click/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/offers/recommended/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/offers/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/offers/trending/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/recommendations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/recommendations/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/statistics/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/sync-logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/sync-logs/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/walls/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/walls/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/walls/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad-networks/walls/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad-networks/walls/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad-networks/walls/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/webhooks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad-networks/webhooks/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad-networks/webhooks/{id}/reprocess/"
+      }
+    ]
+  },
+  {
+    "key": "ad_networks",
+    "label": "Ad Networks",
+    "icon": "[AD]",
+    "count": 87,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/blacklisted-ips/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/blacklisted-ips/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/blacklisted-ips/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/blacklisted-ips/check/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/blacklisted-ips/cleanup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/blacklisted-ips/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/categories/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/categories/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/categories/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/categories/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/categories/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/categories/{id}/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/conversions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/conversions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/conversions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/conversions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/conversions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/conversions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/conversions/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/conversions/{id}/reject/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/conversions/bulk_approve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/engagements/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/engagements/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/engagements/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/engagements/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/engagements/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/engagements/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/engagements/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/engagements/{id}/complete/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/engagements/{id}/reject/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/engagements/history/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/engagements/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/fraud-rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/fraud-rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/fraud-rules/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/known-bad-ips/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/known-bad-ips/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/known-bad-ips/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/networks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/networks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/networks/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/networks/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/networks/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/networks/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/networks/{id}/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/networks/{id}/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/networks/{id}/sync/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/networks/{id}/sync_offers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/networks/{id}/toggle_status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/networks/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/networks/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/networks/top_networks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/offers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/offers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/offers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/offers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/offers/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/offers/{id}/click/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/offers/recommended/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/offers/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/offers/trending/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/recommendations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/recommendations/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/statistics/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/sync-logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/sync-logs/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/walls/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/walls/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/walls/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/ad_networks/walls/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/ad_networks/walls/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/ad_networks/walls/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/webhooks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/ad_networks/webhooks/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/ad_networks/webhooks/{id}/reprocess/"
+      }
+    ]
+  },
+  {
+    "key": "admin-panel",
+    "label": "Admin Panel",
+    "icon": "[AP]",
+    "count": 68,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/actions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/actions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/actions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/admin-panel/actions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/admin-panel/actions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/admin-panel/actions/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/actions/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/dashboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/admin-panel/dashboard/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/admin-panel/dashboard/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/admin-panel/dashboard/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/dashboard/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/dashboard/export_data/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/revenue-chart/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/revenue_stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/system-health/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/dashboard/user_stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/reports/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/reports/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/reports/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/admin-panel/reports/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/admin-panel/reports/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/admin-panel/reports/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/reports/{id}/download/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/reports/{id}/regenerate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/reports/generate_report/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/admin-panel/settings/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/admin-panel/settings/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/admin-panel/settings/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/app_config/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/settings/check-app-version/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/settings/clear-cache/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/maintenance_status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/my_limits/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/payment_gateways/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/public/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/referral_settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/reward_points/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/security_settings/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/settings/toggle-maintenance/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/admin-panel/settings/update_settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/settings/withdrawal_settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-contents/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/site-contents/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-contents/{identifier}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/admin-panel/site-contents/{identifier}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/admin-panel/site-contents/{identifier}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/admin-panel/site-contents/{identifier}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/site-contents/{identifier}/toggle/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-contents/by-identifier/{identifier}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-contents/by_type/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-contents/get_content/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/site-contents/reorder/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-notifications/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/site-notifications/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-notifications/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/admin-panel/site-notifications/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/admin-panel/site-notifications/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/admin-panel/site-notifications/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/admin-panel/site-notifications/{id}/toggle/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-notifications/active_notifications/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/admin-panel/site-notifications/login_notifications/"
+      }
+    ]
+  },
+  {
+    "key": "alerts",
+    "label": "Alerts",
+    "icon": "[AL]",
+    "count": 18,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/alerts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/health/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/logs/{log_id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/alerts/logs/{log_id}/delete/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/alerts/logs/{log_id}/resolve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/alerts/logs/bulk-resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/logs/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/rules/{rule_id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/alerts/rules/{rule_id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/alerts/rules/{rule_id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/alerts/rules/{rule_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/alerts/rules/{rule_id}/test/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/alerts/rules/{rule_id}/toggle/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/alerts/rules/bulk-update-status/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/alerts/rules/create/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/rules/stats/"
+      }
+    ]
+  },
+  {
+    "key": "analytics",
+    "label": "Analytics",
+    "icon": "[AN]",
+    "count": 87,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/analytics/alert-rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/alert-rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/alert-rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/alert-rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/alert-rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/alert-rules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/alert-rules/{id}/test/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/alert-rules/{id}/toggle/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/alerts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/alerts/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/alerts/{id}/resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/alerts/unresolved/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/charts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/dashboards/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/dashboards/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/dashboards/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/dashboards/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/dashboards/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/dashboards/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/dashboards/{id}/clone/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/dashboards/{id}/data/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/dashboards/{id}/export/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/events/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/events/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/events/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/events/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/events/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/events/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/events/event_types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/events/timeline/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/events/track_event/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/export/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/funnel/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/funnel/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/funnel/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/funnel/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/funnel/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/funnel/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/funnel/by_type/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/health/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/offer-performance/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/offer-performance/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/offer-performance/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/offer-performance/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/offer-performance/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/offer-performance/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/offer-performance/{id}/funnel/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/offer-performance/comparison/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/offer-performance/top_performing/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/realtime/metrics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/realtime/metrics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/realtime/ws-token/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/reports/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/reports/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/reports/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/reports/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/reports/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/reports/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/reports/{id}/download/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/reports/generate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/reports/schedule/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/retention/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/retention/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/retention/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/retention/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/retention/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/retention/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/retention/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/revenue-analytics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/revenue-analytics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/revenue-analytics/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/revenue-analytics/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/revenue-analytics/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/revenue-analytics/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/revenue-analytics/forecast/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/revenue-analytics/sources/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/revenue-analytics/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/user-analytics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/analytics/user-analytics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/user-analytics/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/analytics/user-analytics/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/analytics/user-analytics/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/analytics/user-analytics/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/user-analytics/leaderboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/user-analytics/my_analytics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/analytics/user-analytics/retention_curve/"
+      }
+    ]
+  },
+  {
+    "key": "audit_logs",
+    "label": "Audit Logs",
+    "icon": "[AU]",
+    "count": 56,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/alert-rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/alert-rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/alert-rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/audit_logs/alert-rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/audit_logs/alert-rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/audit_logs/alert-rules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/alert-rules/{id}/disable/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/alert-rules/{id}/enable/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/alert-rules/{id}/test/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/alert-rules/triggered/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/archives/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/archives/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/archives/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/audit_logs/archives/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/audit_logs/archives/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/audit_logs/archives/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/archives/{id}/download/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/archives/create/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/archives/create_archive/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/configs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/configs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/configs/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/audit_logs/configs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/audit_logs/configs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/audit_logs/configs/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/configs/defaults/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/configs/reset/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/dashboards/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/dashboards/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/dashboards/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/audit_logs/dashboards/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/audit_logs/dashboards/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/audit_logs/dashboards/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/dashboards/{id}/preview/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/dashboards/{id}/set_default/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/export/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/health/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/live/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/logs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/logs/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/audit_logs/logs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/audit_logs/logs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/audit_logs/logs/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/logs/{id}/redact/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/logs/export/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/audit_logs/logs/purge/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/logs/search/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/logs/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/logs/timeline/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/audit_logs/purge/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/audit_logs/search/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/stats/timeline/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit_logs/users/summary/"
+      }
+    ]
+  },
+  {
+    "key": "auth",
+    "label": "Auth",
+    "icon": "[KY]",
+    "count": 52,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/auth/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auth/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/auth/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/auth/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/{id}/deactivate_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/{id}/verify_user/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/admin/fraud/dashboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/admin/fraud/events/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/admin/fraud/high-risk-users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/admin/fraud/statistics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/api/login/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/dashboard-stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/device-fingerprints/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/devices/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/devices/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/devices/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auth/devices/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/auth/devices/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/auth/devices/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/devices/{id}/deactivate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/devices/active_devices/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/fraud-logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/fraud_reports/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/ip-reputations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/kyc/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/kyc/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/kyc/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auth/kyc/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/auth/kyc/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/auth/kyc/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/kyc/status/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/kyc/submit_kyc/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/leaderboard/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/login/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/me/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/auth/me/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/password/reset/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/password/reset/confirm/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/profile/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/profile/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/profile/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auth/profile/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/auth/profile/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/auth/profile/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/profile/my_profile/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auth/profile/update_profile/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auth/rate-limits/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/refresh/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/register/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auth/signup/"
+      }
+    ]
+  },
+  {
+    "key": "auto-mod",
+    "label": "Auto Mod",
+    "icon": "[AM]",
+    "count": 26,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/bots/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/bots/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/bots/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auto-mod/bots/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/auto-mod/bots/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/bots/{id}/health/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/bots/{id}/start/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/bots/{id}/stop/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/dashboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/auto-mod/rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/auto-mod/rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/auto-mod/rules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/rules/{id}/toggle/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/scans/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/scans/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/submissions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/submissions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/submissions/{id}/rescan/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/submissions/{id}/review/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/submissions/bulk-action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/submissions/queue/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/auto-mod/submissions/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/auto-mod/submissions/submit/"
+      }
+    ]
+  },
+  {
+    "key": "backup",
+    "label": "Backup",
+    "icon": "[BK]",
+    "count": 93,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/backup/admin/backup/api/backup-progress/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/admin/backup/api/start-backup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/analytics/backup-growth/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/analytics/performance-metrics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/analytics/retention-analysis/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/analytics/storage-usage/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/backup-progress/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/backup-status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/backups/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/backups/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/backup/backups/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/backups/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/backups/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/{id}/clone/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/{id}/create-redundant/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/{id}/create_redundant_copy/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/backups/{id}/download/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/{id}/health-check/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/{id}/health_check/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/backups/{id}/logs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/{id}/restore/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/backups/{id}/verify/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/backups/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/cancel-backup/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/cleanup-old-backups/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/dashboard-stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/delta-trackers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/delta-trackers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/delta-trackers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/backup/delta-trackers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/delta-trackers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/delta-trackers/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/delta-trackers/{id}/chain_backups/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/delta-trackers/{id}/consolidate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/logs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/logs/{id}/archive/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/logs/{id}/mark_processed/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/logs/cleanup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/logs/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/maintenance-mode/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/notification-configs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/notification-configs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/notification-configs/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/backup/notification-configs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/notification-configs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/notification-configs/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/notification-configs/{id}/test_notification/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/public/backup-status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/public/health-check/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/reports/backup-summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/reports/compliance-report/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/reports/health-report/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/restorations/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/restorations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/restorations/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/backup/restorations/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/restorations/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/restorations/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/restore-backup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/retention-policies/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/retention-policies/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/retention-policies/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/backup/retention-policies/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/retention-policies/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/retention-policies/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/retention-policies/{id}/affected_backups/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/retention-policies/{id}/execute/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/retention-policies/{id}/pause/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/retention-policies/{id}/resume/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/schedules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/schedules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/schedules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/backup/schedules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/schedules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/schedules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/schedules/{id}/run_now/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/schedules/{id}/toggle_active/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/start-backup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/storage-locations/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/storage-locations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/storage-locations/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/backup/storage-locations/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/backup/storage-locations/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/backup/storage-locations/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/storage-locations/{id}/test_connection/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/storage-locations/{id}/usage_stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/backup/system-metrics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/test-notification/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/webhooks/backup-complete/{backup_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/webhooks/health-alert/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/backup/webhooks/restore-complete/{restoration_id}/"
+      }
+    ]
+  },
+  {
+    "key": "behavior-analytics",
+    "label": "Behavior Analytics",
+    "icon": "[BA]",
+    "count": 23,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/admin/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/clicks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/clicks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/clicks/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/clicks/bulk/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/clicks/top_elements/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/dashboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/engagement-scores/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/engagement-scores/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/engagement-scores/recalculate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/engagement-scores/summary/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/engagement/recalculate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/events/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/paths/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/paths/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/paths/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/paths/{id}/add_nodes/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/paths/{id}/close/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/sessions/{session_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/stay-times/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/behavior-analytics/stay-times/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/stay-times/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/behavior-analytics/stay-times/stats/"
+      }
+    ]
+  },
+  {
+    "key": "cache",
+    "label": "Cache",
+    "icon": "[CA]",
+    "count": 3,
+    "endpoints": [
+      {
+        "method": "DELETE",
+        "path": "/api/cache/key/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cache/keys/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cache/set/"
+      }
+    ]
+  },
+  {
+    "key": "cms",
+    "label": "Cms",
+    "icon": "[CM]",
+    "count": 80,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/cms/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/analytics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/analytics/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/analytics/today/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/api/banners/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/api/content/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/api/faqs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/banners/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/banners/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/banners/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/banners/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/banners/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/banners/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/banners/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/categories/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/categories/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/categories/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/categories/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/categories/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/comments/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/comments/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/comments/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/comments/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/comments/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/comments/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/comments/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/comments/{id}/flag/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/faq-categories/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/faq-categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/faq-categories/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/faq-categories/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/faq-categories/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/faq-categories/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/faqs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/faqs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/faqs/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/faqs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/faqs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/faqs/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/files/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/files/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/files/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/files/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/files/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/files/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/galleries/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/galleries/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/galleries/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/galleries/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/galleries/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/galleries/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/gallery-images/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/gallery-images/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/gallery-images/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/gallery-images/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/gallery-images/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/gallery-images/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/pages/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/pages/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/pages/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/pages/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/pages/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/pages/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/pages/featured/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/pages/published/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/pages/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/permissions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/permissions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/permissions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/permissions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/permissions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/permissions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/permissions/check/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/settings/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/cms/settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/cms/settings/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/cms/settings/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/cms/settings/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/cms/settings/{id}/"
+      }
+    ]
+  },
+  {
+    "key": "complete-ad",
+    "label": "Complete Ad",
+    "icon": "[CA]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/complete-ad/"
+      }
+    ]
+  },
+  {
+    "key": "customers",
+    "label": "Customers",
+    "icon": "[CU]",
+    "count": 22,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/customers/customers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/customers/customers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/customers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/customers/customers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/customers/customers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/customers/customers/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/customers/{id}/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/customers/newsletter_subscribers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/events/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/customers/events/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/events/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/customers/events/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/customers/events/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/customers/events/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/events/by_action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/transactions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/customers/transactions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/transactions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/customers/transactions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/customers/transactions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/customers/transactions/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/customers/transactions/summary/"
+      }
+    ]
+  },
+  {
+    "key": "dashboard",
+    "label": "Dashboard",
+    "icon": "[DB]",
+    "count": 2,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/dashboard/earnings-chart/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/dashboard/stats/"
+      }
+    ]
+  },
+  {
+    "key": "djoyalty",
+    "label": "Djoyalty",
+    "icon": "[LY]",
+    "count": 22,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/customers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/djoyalty/customers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/customers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/djoyalty/customers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/djoyalty/customers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/djoyalty/customers/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/customers/{id}/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/customers/newsletter_subscribers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/events/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/djoyalty/events/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/events/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/djoyalty/events/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/djoyalty/events/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/djoyalty/events/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/events/by_action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/transactions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/djoyalty/transactions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/transactions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/djoyalty/transactions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/djoyalty/transactions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/djoyalty/transactions/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/djoyalty/transactions/summary/"
+      }
+    ]
+  },
+  {
+    "key": "engagement",
+    "label": "Engagement",
+    "icon": "[EN]",
+    "count": 12,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/engagement/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/checkins/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/checkins/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/engagement/daily-checkin/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/daily-stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/leaderboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/leaderboard-rewards/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/engagement/leaderboard-rewards/{rank}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/engagement/spin-wheel/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/spins/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/spins/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/engagement/stats/"
+      }
+    ]
+  },
+  {
+    "key": "fraud-detection",
+    "label": "Fraud Detection",
+    "icon": "[FD]",
+    "count": 78,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/alerts/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/alerts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/alerts/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud-detection/alerts/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud-detection/alerts/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud-detection/alerts/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/alerts/{id}/mark_resolved/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/alerts/{id}/notify_users/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/alerts/bulk-resolve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/alerts/bulk_resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/alerts/dashboard-stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/alerts/dashboard_stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/attempts/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/attempts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/attempts/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud-detection/attempts/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud-detection/attempts/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud-detection/attempts/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/attempts/{id}/escalate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/attempts/{id}/mark_confirmed/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/attempts/{id}/mark_false_positive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/attempts/bulk-update/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/attempts/bulk_update/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/attempts/statistics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/auto-ban/ban-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/auto-ban/process-attempt/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/auto-ban/restrict-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/auto-ban/suspend-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/auto-ban/unban-users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/dashboard/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/detect/check-device/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/detect/check-offer/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/detect/check-transaction/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/detect/check-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/quick-check/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/review/batch/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/review/batch/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/review/case/{attempt_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/review/case/{attempt_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/review/comment/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/review/comment/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/review/decide/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/review/decide/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/review/escalate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/review/escalate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/review/pending/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/review/pending/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/review/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/review/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/risk-profiles/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/risk-profiles/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud-detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud-detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud-detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/risk-profiles/{id}/flag_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/risk-profiles/{id}/recalculate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/risk-profiles/{id}/restrict_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/risk-profiles/{id}/unflag_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/risk-profiles/{id}/unrestrict_user/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/risk-profiles/distribution/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/risk-profiles/high-risk/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/risk-profiles/high_risk_users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/risk-profiles/risk_distribution/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud-detection/rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud-detection/rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud-detection/rules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/rules/{id}/duplicate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/rules/{id}/test_rule/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/rules/{id}/toggle_active/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/rules/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/rules/types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/settings/block-vpn/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud-detection/settings/block-vpn/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud-detection/statistics/"
+      }
+    ]
+  },
+  {
+    "key": "fraud_detection",
+    "label": "Fraud Detection",
+    "icon": "[FD]",
+    "count": 78,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/alerts/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/alerts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/alerts/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud_detection/alerts/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud_detection/alerts/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud_detection/alerts/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/alerts/{id}/mark_resolved/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/alerts/{id}/notify_users/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/alerts/bulk-resolve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/alerts/bulk_resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/alerts/dashboard-stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/alerts/dashboard_stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/attempts/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/attempts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/attempts/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud_detection/attempts/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud_detection/attempts/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud_detection/attempts/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/attempts/{id}/escalate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/attempts/{id}/mark_confirmed/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/attempts/{id}/mark_false_positive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/attempts/bulk-update/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/attempts/bulk_update/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/attempts/statistics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/auto-ban/ban-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/auto-ban/process-attempt/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/auto-ban/restrict-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/auto-ban/suspend-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/auto-ban/unban-users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/dashboard/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/detect/check-device/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/detect/check-offer/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/detect/check-transaction/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/detect/check-user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/quick-check/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/review/batch/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/review/batch/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/review/case/{attempt_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/review/case/{attempt_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/review/comment/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/review/comment/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/review/decide/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/review/decide/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/review/escalate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/review/escalate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/review/pending/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/review/pending/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/review/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/review/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/risk-profiles/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/risk-profiles/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud_detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud_detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud_detection/risk-profiles/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/risk-profiles/{id}/flag_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/risk-profiles/{id}/recalculate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/risk-profiles/{id}/restrict_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/risk-profiles/{id}/unflag_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/risk-profiles/{id}/unrestrict_user/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/risk-profiles/distribution/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/risk-profiles/high-risk/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/risk-profiles/high_risk_users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/risk-profiles/risk_distribution/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/fraud_detection/rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/fraud_detection/rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/fraud_detection/rules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/rules/{id}/duplicate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/rules/{id}/test_rule/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/rules/{id}/toggle_active/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/rules/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/rules/types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/settings/block-vpn/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/fraud_detection/settings/block-vpn/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/fraud_detection/statistics/"
+      }
+    ]
+  },
+  {
+    "key": "gamification",
+    "label": "Gamification",
+    "icon": "[GM]",
+    "count": 22,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/gamification/achievements/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/achievements/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/achievements/my-points/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/contest-cycles/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/gamification/contest-cycles/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/contest-cycles/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/gamification/contest-cycles/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/gamification/contest-cycles/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/gamification/contest-cycles/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/gamification/contest-cycles/{id}/activate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/gamification/contest-cycles/{id}/complete/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/gamification/contest-cycles/{id}/distribute-rewards/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/contest-cycles/{id}/leaderboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/leaderboard-snapshots/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/leaderboard-snapshots/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/gamification/leaderboard-snapshots/generate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/rewards/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/gamification/rewards/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/gamification/rewards/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/gamification/rewards/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/gamification/rewards/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/gamification/rewards/{id}/"
+      }
+    ]
+  },
+  {
+    "key": "inventory",
+    "label": "Inventory",
+    "icon": "[IN]",
+    "count": 21,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/inventory/catalog/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/codes/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/codes/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/codes/{id}/void/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/items/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/items/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/items/{slug}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/inventory/items/{slug}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/inventory/items/{slug}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/inventory/items/{slug}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/items/{slug}/adjust-stock/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/items/{slug}/award/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/items/{slug}/bulk-import-codes/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/items/{slug}/generate-codes/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/items/{slug}/restock/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/items/{slug}/stock-history/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/mine/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/user-inventory/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/inventory/user-inventory/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/user-inventory/{id}/claim/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/inventory/user-inventory/{id}/revoke/"
+      }
+    ]
+  },
+  {
+    "key": "kyc",
+    "label": "Kyc",
+    "icon": "[KC]",
+    "count": 16,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/kyc/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/kyc/admin/add-note/{kyc_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/kyc/admin/bulk-action/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/kyc/admin/delete/{kyc_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kyc/admin/list/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kyc/admin/logs/{kyc_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/kyc/admin/reset/{kyc_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kyc/admin/review/{kyc_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/kyc/admin/review/{kyc_id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/kyc/admin/review/{kyc_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kyc/admin/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kyc/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kyc/records/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kyc/submit/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/kyc/submit/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/kyc/submit/"
+      }
+    ]
+  },
+  {
+    "key": "localization",
+    "label": "Localization",
+    "icon": "[LC]",
+    "count": 43,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/localization/languages/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/languages/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/languages/{code}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/localization/languages/{code}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/localization/languages/{code}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/localization/languages/{code}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/languages/{code}/set_default/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/languages/default/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/missing-translations/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/missing-translations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/missing-translations/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/localization/missing-translations/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/localization/missing-translations/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/localization/missing-translations/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/public/translations/{language_code}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/report-missing/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translation-cache/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translation-cache/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translation-cache/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/localization/translation-cache/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/localization/translation-cache/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/localization/translation-cache/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translation-cache/clean-expired/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translation-cache/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translation-keys/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translation-keys/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translation-keys/{key}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/localization/translation-keys/{key}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/localization/translation-keys/{key}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/localization/translation-keys/{key}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translation-keys/by_category/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translation-keys/export/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translations/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translations/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/localization/translations/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/localization/translations/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/localization/translations/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translations/bulk_create/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/localization/translations/by_language/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translations/export/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translations/import/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/localization/translations/import_translations/"
+      }
+    ]
+  },
+  {
+    "key": "login",
+    "label": "Login",
+    "icon": "[LG]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/login/"
+      }
+    ]
+  },
+  {
+    "key": "loyalty",
+    "label": "Loyalty",
+    "icon": "[LO]",
+    "count": 22,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/loyalty/customers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/loyalty/customers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/customers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/loyalty/customers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/loyalty/customers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/loyalty/customers/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/customers/{id}/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/customers/newsletter_subscribers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/events/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/loyalty/events/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/events/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/loyalty/events/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/loyalty/events/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/loyalty/events/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/events/by_action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/transactions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/loyalty/transactions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/transactions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/loyalty/transactions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/loyalty/transactions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/loyalty/transactions/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/loyalty/transactions/summary/"
+      }
+    ]
+  },
+  {
+    "key": "messaging",
+    "label": "Messaging",
+    "icon": "[MS]",
+    "count": 27,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/messaging/broadcasts/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/broadcasts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/broadcasts/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/messaging/broadcasts/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/messaging/broadcasts/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/messaging/broadcasts/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/broadcasts/{id}/send/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/broadcasts/{id}/send-async/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/chats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/chats/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/chats/{id}/messages/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/messaging/chats/{id}/messages/{message_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/chats/{id}/send/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/chats/direct/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/chats/group/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/inbox/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/inbox/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/inbox/{id}/archive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/inbox/mark-read/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/inbox/unread-count/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/support/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/messaging/support/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/support/{id}/assign/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/support/{id}/reply/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/support/{id}/transition/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/support/create/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/messaging/upload/"
+      }
+    ]
+  },
+  {
+    "key": "my-payment-requests",
+    "label": "My Payment Requests",
+    "icon": "[??]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/my-payment-requests/"
+      }
+    ]
+  },
+  {
+    "key": "mylead-postback",
+    "label": "Mylead Postback",
+    "icon": "[??]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/mylead-postback/"
+      }
+    ]
+  },
+  {
+    "key": "notices",
+    "label": "Notices",
+    "icon": "[??]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/notices/"
+      }
+    ]
+  },
+  {
+    "key": "notifications",
+    "label": "Notifications",
+    "icon": "[NT]",
+    "count": 143,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/notifications/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/analytics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/analytics/generate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/bulk_create/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/send_test/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/{campaign_pk}/notifications/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/campaigns/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/campaigns/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/campaigns/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{id}/cancel/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/{id}/notifications/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{id}/pause/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/{id}/performance/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{id}/resume/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{id}/start/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/{id}/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/campaigns/{id}/user_action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/campaigns/campaign_types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/device-tokens/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/device-tokens/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/device-tokens/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/device-tokens/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/device-tokens/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/device-tokens/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/device-tokens/{id}/deactivate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/device-tokens/device_types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/device-tokens/me/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/device-tokens/platforms/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notices/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notices/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notices/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/notices/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/notices/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/notices/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notices/{id}/archive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notices/{id}/publish/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notices/{id}/unpublish/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/feedbacks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{notification_pk}/feedbacks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/feedbacks/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/notifications/{notification_pk}/feedbacks/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/notifications/{notification_pk}/feedbacks/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/notifications/{notification_pk}/feedbacks/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/feedbacks/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/logs/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/close_thread/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/mark_thread_read/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/participants/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/{id}/reopen_thread/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/my_threads/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/search_threads/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{notification_pk}/replies/thread/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/notifications/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/notifications/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/notifications/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{id}/analytics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/archive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/feedback/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/mark-read/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/mark-unread/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/pin/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{id}/replies/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/reply/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/{id}/thread/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/track-click/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/track-impression/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/unarchive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/{id}/unpin/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/archived/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/bulk_action/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/bulk_delete/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/count_unread/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/mark-all-read/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/pinned/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/notifications/send-bulk/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/notifications/unread/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/preferences/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/preferences/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/preferences/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/preferences/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/preferences/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/preferences/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/preferences/channels/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/preferences/export/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/preferences/import_prefs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/preferences/me/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/preferences/me/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/preferences/notification_types/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/preferences/reset/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/rules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/rules/{id}/cancel/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/rules/{id}/pause/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/rules/{id}/resume/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/rules/{id}/start/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/rules/{id}/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/rules/{id}/test/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/rules/{id}/user_action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/rules/action-types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/rules/target_types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/rules/trigger_types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/templates/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/templates/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/templates/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/notifications/templates/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/notifications/templates/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/notifications/templates/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/templates/{id}/clone/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/templates/{id}/create_notification/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/notifications/templates/{id}/preview/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/templates/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/templates/types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/unread-count/"
+      }
+    ]
+  },
+  {
+    "key": "offers",
+    "label": "Offers",
+    "icon": "[OF]",
+    "count": 39,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/offers/categories/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/offers/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/categories/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/offers/categories/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/offers/categories/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/offers/categories/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/categories/{id}/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/clicks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/clicks/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/clicks/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/conversions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/conversions/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/conversions/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/offers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/offers/offers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/offers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/offers/offers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/offers/offers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/offers/offers/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/offers/offers/{id}/click/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/offers/featured/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/offers/recommended/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/offers/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/offers/trending/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/providers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/offers/providers/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/providers/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/offers/providers/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/offers/providers/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/offers/providers/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/providers/{id}/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/offers/providers/{id}/sync/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/walls/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/offers/walls/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/walls/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/offers/walls/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/offers/walls/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/offers/walls/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/offers/walls/{id}/offers/"
+      }
+    ]
+  },
+  {
+    "key": "payment-history",
+    "label": "Payment History",
+    "icon": "[??]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/payment-history/"
+      }
+    ]
+  },
+  {
+    "key": "payment-request",
+    "label": "Payment Request",
+    "icon": "[??]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/payment-request/"
+      }
+    ]
+  },
+  {
+    "key": "payment_gateways",
+    "label": "Payment Gateways",
+    "icon": "[PG]",
+    "count": 50,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/configs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/configs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/configs/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/payment_gateways/configs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/payment_gateways/configs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/payment_gateways/configs/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/currencies/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/currencies/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/currencies/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/payment_gateways/currencies/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/payment_gateways/currencies/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/payment_gateways/currencies/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/currencies/{id}/set_default/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/gateways/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/gateways/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/gateways/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/payment_gateways/gateways/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/payment_gateways/gateways/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/payment_gateways/gateways/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/gateways/{id}/set_maintenance/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/gateways/{id}/toggle_status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/gateways/active/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/methods/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/methods/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/methods/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/payment_gateways/methods/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/payment_gateways/methods/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/payment_gateways/methods/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/methods/{id}/set_default/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/methods/{id}/verify/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/payouts/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/payouts/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/payouts/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/payment_gateways/payouts/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/payment_gateways/payouts/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/payment_gateways/payouts/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/payouts/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/payouts/{id}/reject/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/payouts/pending/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/transactions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/transactions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/transactions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/payment_gateways/transactions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/payment_gateways/transactions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/payment_gateways/transactions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/transactions/deposit/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/transactions/history/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payment_gateways/transactions/withdraw/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/webhook-logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payment_gateways/webhook-logs/{id}/"
+      }
+    ]
+  },
+  {
+    "key": "payout-queue",
+    "label": "Payout Queue",
+    "icon": "[PQ]",
+    "count": 18,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/batches/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payout-queue/batches/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/batches/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/payout-queue/batches/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/payout-queue/batches/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/payout-queue/batches/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payout-queue/batches/{id}/add-items/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payout-queue/batches/{id}/cancel/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payout-queue/batches/{id}/process/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payout-queue/batches/{id}/process-async/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/batches/{id}/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/items/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/items/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/payout-queue/items/{id}/cancel/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/logs/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/priorities/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/payout-queue/priorities/{id}/"
+      }
+    ]
+  },
+  {
+    "key": "postback",
+    "label": "Postback",
+    "icon": "[PB]",
+    "count": 19,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/postback/admin/dashboard/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/postback/admin/logs/{id}/retry/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/duplicates/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/duplicates/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/postback/duplicates/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/logs/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/postback/logs/{id}/retry/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/networks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/postback/networks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/networks/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/postback/networks/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/postback/networks/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/postback/networks/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/postback/networks/{id}/activate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/postback/networks/{id}/deactivate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/networks/{id}/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/postback/networks/{id}/validators/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/postback/networks/{id}/validators/"
+      }
+    ]
+  },
+  {
+    "key": "profile",
+    "label": "Profile",
+    "icon": "[PR]",
+    "count": 7,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/profile/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/profile/avatar/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/profile/change-phone/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/profile/login-history/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/profile/update/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/profile/update/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/profile/verify-phone/"
+      }
+    ]
+  },
+  {
+    "key": "promotions",
+    "label": "Promotions",
+    "icon": "[PM]",
+    "count": 101,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/promotions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/{id}/archive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/{id}/pause/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/{id}/resume/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/{id}/sparkline/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/analytics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/analytics/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/analytics/overall/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/bidding/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/bidding/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/bidding/{id}/resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/blacklist/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/blacklist/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/blacklist/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/blacklist/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/blacklist/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/blacklist/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/blacklist/check/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/campaigns/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/campaigns/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/campaigns/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/campaigns/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/campaigns/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/campaigns/{id}/analytics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/{id}/archive/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/{id}/budget_top_up/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/{id}/cancel/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/{id}/duplicate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/{id}/pause/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/campaigns/{id}/resume/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/campaigns/{id}/submissions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/categories/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/categories/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/categories/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/categories/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/categories/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/categories/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/currency-rates/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/currency-rates/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/currency-rates/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/currency-rates/latest/{from_currency}/{to_currency}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/device-fingerprints/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/device-fingerprints/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/device-fingerprints/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/disputes/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/disputes/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/disputes/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/disputes/{id}/resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/escrow/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/escrow/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/fraud-reports/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/fraud-reports/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/fraud-reports/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/fraud-reports/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/fraud-reports/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/fraud-reports/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/fraud-reports/{id}/take_action/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/platforms/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/platforms/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/platforms/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/platforms/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/platforms/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/platforms/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/quick-create/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/quick-delete/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/quick-update/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/quick-update/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/referral-commissions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/referral-commissions/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/reputation/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/reputation/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/reputation/mine/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/reward-policies/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/reward-policies/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/reward-policies/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/reward-policies/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/reward-policies/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/reward-policies/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/reward-policies/by-country/{country_code}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/submissions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/submissions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/submissions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/promotions/submissions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/promotions/submissions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/promotions/submissions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/submissions/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/submissions/{id}/reject/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/submissions/{id}/verification_logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/transactions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/transactions/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/transactions/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/promotions/user-offers/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/promotions/user-offers/"
+      }
+    ]
+  },
+  {
+    "key": "rate-limit",
+    "label": "Rate Limit",
+    "icon": "[RL]",
+    "count": 36,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/configs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/configs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/configs/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/rate-limit/configs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/rate-limit/configs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/rate-limit/configs/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/configs/{id}/duplicate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/configs/{id}/test/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/configs/bulk_update/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/configs/types/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/dashboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/earning/offer-limit/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/earning/offer-limit/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/earning/referral-limit/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/earning/referral-limit/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/earning/task-limit/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/earning/task-limit/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/health/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/logs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/rate-limit/logs/clear_old/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/logs/export/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/logs/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/test/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/test/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/user-profiles/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/user-profiles/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/user-profiles/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/rate-limit/user-profiles/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/rate-limit/user-profiles/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/rate-limit/user-profiles/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/user-profiles/{id}/reset_limits/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/user-profiles/{id}/set_custom_limits/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/user-profiles/{id}/upgrade_premium/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/rate-limit/user/info/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/rate-limit/user/info/"
+      }
+    ]
+  },
+  {
+    "key": "referral",
+    "label": "Referral",
+    "icon": "[RF]",
+    "count": 24,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/referral/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/referral/admin/adjust-commission/{referral_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/referral/admin/create/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/referral/admin/delete/{referral_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/admin/earnings/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/referral/admin/earnings/delete/{earning_id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/referral/admin/give-bonus/{referral_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/admin/list/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/admin/overview/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/admin/search-users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/admin/settings/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/referral/admin/settings/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/referral/admin/settings/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/referral/admin/settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/admin/stats-by-date/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/referral/admin/toggle-program/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/earnings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/referrals/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/referral/referrals/{referral_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/settings/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/referral/settings/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/referral/settings/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/referral/settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/referral/stats/"
+      }
+    ]
+  },
+  {
+    "key": "register",
+    "label": "Register",
+    "icon": "[RG]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/register/"
+      }
+    ]
+  },
+  {
+    "key": "security",
+    "label": "Security",
+    "icon": "[SC]",
+    "count": 133,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/security/2fa/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/2fa/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/2fa/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/2fa/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/2fa/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/2fa/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/2fa/{id}/generate_backup_codes/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/2fa/{id}/setup_totp/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/2fa/bulk_operations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/2fa/primary_method/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/audit/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/audit/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/audit/export-summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/audit/object-history/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/audit/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/audit/suspicious-activity/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/audit/user-activity/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/auto-block-rules/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/auto-block-rules/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/auto-block-rules/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/auto-block-rules/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/auto-block-rules/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/auto-block-rules/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/auto-block-rules/{id}/test/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/auto-block-rules/{rule_id}/test/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/auto-block-rules/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/bans/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/bans/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/bans/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/bans/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/bans/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/bans/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/bans/{id}/deactivate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/bans/{id}/extend/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/bans/bulk_deactivate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/bans/check_self/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/bans/check_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/bans/cleanup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/bans/stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/dashboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/dashboards/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/dashboards/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/dashboards/overview/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/devices/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/{device_id}/blacklist/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/{device_id}/trust/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/{device_id}/whitelist/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/devices/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/devices/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/devices/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/devices/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/{id}/blacklist/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/{id}/toggle-trust/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/{id}/whitelist/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/devices/analytics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/devices/analytics/overview/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/devices/bulk-update/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/devices/export/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/devices/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/fraud-patterns/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/fraud-patterns/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/fraud-patterns/{pattern_id}/test/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/fraud-patterns/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/fraud-patterns/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/fraud-patterns/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/fraud-patterns/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/fraud-patterns/{id}/test/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/fraud-patterns/detection-report/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/fraud-patterns/detection_report/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/health/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/ip-blacklist/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/ip-blacklist/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/ip-blacklist/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/ip-blacklist/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/ip-blacklist/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/{id}/deactivate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/{id}/extend/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/{id}/increment_attack/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/block_ip_quick/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/bulk_deactivate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/ip-blacklist/check_ip/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/check_multiple_ips/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/cleanup/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/ip-blacklist/stats/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/ip-blacklist/unblock_ip_quick/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/logs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/real-time-detections/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/real-time-detections/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/real-time-detections/{detection_id}/start/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/real-time-detections/{detection_id}/stop/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/real-time-detections/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/real-time-detections/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/real-time-detections/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/real-time-detections/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/real-time-detections/{id}/start/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/real-time-detections/{id}/stop/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/real-time-detections/monitoring/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/real-time-detections/status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/risk-scores/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/risk-scores/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/risk-scores/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/risk-scores/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/risk-scores/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/risk-scores/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/risk-scores/{id}/recalculate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/risk-scores/{risk_id}/recalculate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/risk-scores/bulk/recalculate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/risk-scores/distribution/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/security-logs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/security-logs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/security-logs/{log_id}/resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/security-logs/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/security-logs/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/security-logs/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/security-logs/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/security-logs/{id}/resolve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/security-logs/bulk/resolve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/security-logs/export/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/security-logs/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/sessions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/sessions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/sessions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/security/sessions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/security/sessions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/security/sessions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/sessions/{id}/terminate_session/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/sessions/active_sessions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/sessions/bulk_operations/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/security/sessions/terminate_all_other/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/security/status/"
+      }
+    ]
+  },
+  {
+    "key": "subscription",
+    "label": "Subscription",
+    "icon": "[SB]",
+    "count": 43,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/subscription/admin/subscriptions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/admin/subscriptions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/admin/subscriptions/{id}/force-status/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/admin/subscriptions/grant/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/admin/subscriptions/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/admin/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/coupons/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/coupons/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/coupons/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/subscription/coupons/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/subscription/coupons/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscription/coupons/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/coupons/{id}/usages/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/coupons/validate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/my-subscription/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/payments/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/payments/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/payments/{id}/refund/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/plans/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/plans/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/plans/{plan_slug}/benefits/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/plans/{plan_slug}/benefits/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/subscription/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/subscription/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscription/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/plans/{slug}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/subscription/plans/{slug}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/subscription/plans/{slug}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscription/plans/{slug}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/plans/{slug}/archive/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/plans/{slug}/subscriber-count/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/pricing/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/subscriptions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/subscriptions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscription/subscriptions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/subscriptions/{id}/cancel/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/subscriptions/{id}/change-plan/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/subscriptions/{id}/pause/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/subscriptions/{id}/resume/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscription/subscriptions/me/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/subscriptions/subscribe/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscription/webhooks/payment/"
+      }
+    ]
+  },
+  {
+    "key": "subscriptions",
+    "label": "Subscriptions",
+    "icon": "[SB]",
+    "count": 43,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/admin/subscriptions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/admin/subscriptions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/admin/subscriptions/{id}/force-status/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/admin/subscriptions/grant/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/admin/subscriptions/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/admin/summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/coupons/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/coupons/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/coupons/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/subscriptions/coupons/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/subscriptions/coupons/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscriptions/coupons/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/coupons/{id}/usages/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/coupons/validate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/my-subscription/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/payments/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/payments/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/payments/{id}/refund/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/plans/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/plans/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/plans/{plan_slug}/benefits/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/plans/{plan_slug}/benefits/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/subscriptions/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/subscriptions/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscriptions/plans/{plan_slug}/benefits/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/plans/{slug}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/subscriptions/plans/{slug}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/subscriptions/plans/{slug}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscriptions/plans/{slug}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/plans/{slug}/archive/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/plans/{slug}/subscriber-count/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/pricing/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/subscriptions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/subscriptions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/subscriptions/subscriptions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/subscriptions/{id}/cancel/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/subscriptions/{id}/change-plan/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/subscriptions/{id}/pause/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/subscriptions/{id}/resume/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/subscriptions/subscriptions/me/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/subscriptions/subscribe/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/subscriptions/webhooks/payment/"
+      }
+    ]
+  },
+  {
+    "key": "support",
+    "label": "Support",
+    "icon": "[SP]",
+    "count": 16,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/support/faqs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/support/faqs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/support/faqs/{faq_id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/support/faqs/{faq_id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/support/faqs/{faq_id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/support/faqs/{faq_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/support/settings/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/support/settings/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/support/settings/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/support/tickets/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/support/tickets/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/support/tickets/{ticket_id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/support/tickets/{ticket_id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/support/tickets/{ticket_id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/support/tickets/{ticket_id}/respond/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/support/tickets/stats/"
+      }
+    ]
+  },
+  {
+    "key": "tasks",
+    "label": "Tasks",
+    "icon": "[TK]",
+    "count": 40,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin-ledger/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin-ledger/by-source/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin-ledger/daily-profit/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin-ledger/profit-summary/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin/tasks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/admin/tasks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin/tasks/{task_id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/tasks/admin/tasks/{task_id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/tasks/admin/tasks/{task_id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/tasks/admin/tasks/{task_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin/tasks/{task_id}/check-availability/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin/tasks/{task_id}/statistics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/admin/tasks/bulk-import/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/admin/tasks/bulk-operation/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin/tasks/by-system/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/admin/tasks/featured/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/completions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/completions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/completions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/tasks/completions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/tasks/completions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/completions/{id}/complete/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/completions/{id}/verify/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/completions/history/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/health/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/tasks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/tasks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/tasks/{task_id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/tasks/tasks/{task_id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/tasks/tasks/{task_id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/tasks/tasks/{task_id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/tasks/{task_id}/check-availability/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/tasks/{task_id}/statistics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/tasks/bulk-activate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/tasks/bulk-deactivate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/tasks/tasks/bulk-import/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/tasks/by-system/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/tasks/dashboard-stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tasks/tasks/featured/"
+      }
+    ]
+  },
+  {
+    "key": "user",
+    "label": "User",
+    "icon": "[US]",
+    "count": 1,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/user/"
+      }
+    ]
+  },
+  {
+    "key": "users",
+    "label": "Users",
+    "icon": "[US]",
+    "count": 48,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/users/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/users/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/users/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/users/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/{id}/deactivate_user/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/{id}/verify_user/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/admin/fraud/dashboard/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/admin/fraud/events/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/admin/fraud/high-risk-users/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/admin/fraud/statistics/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/api/login/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/dashboard-stats/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/device-fingerprints/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/devices/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/devices/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/devices/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/users/devices/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/users/devices/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/users/devices/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/devices/{id}/deactivate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/devices/active_devices/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/fraud-logs/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/fraud_reports/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/ip-reputations/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/kyc/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/kyc/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/kyc/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/users/kyc/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/users/kyc/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/users/kyc/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/kyc/status/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/kyc/submit_kyc/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/leaderboard/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/login/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/me/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/users/me/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/profile/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/profile/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/profile/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/users/profile/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/users/profile/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/users/profile/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/profile/my_profile/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/users/profile/update_profile/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/rate-limits/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/register/"
+      }
+    ]
+  },
+  {
+    "key": "version-control",
+    "label": "Version Control",
+    "icon": "[VC]",
+    "count": 25,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/version-control/check/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/maintenance/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/maintenance/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/maintenance-status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/maintenance/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/maintenance/{id}/cancel/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/maintenance/{id}/end/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/maintenance/{id}/start/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/maintenance/status/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/policies/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/policies/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/policies/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/version-control/policies/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/version-control/policies/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/policies/{id}/activate/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/policies/{id}/deactivate/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/redirects/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/redirects/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/redirects/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/version-control/redirects/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/version-control/redirects/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/version-control/redirects/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/redirects/resolve/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/version-control/version-check/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/version-control/webhook/deploy/"
+      }
+    ]
+  },
+  {
+    "key": "wallet",
+    "label": "Wallet",
+    "icon": "[WL]",
+    "count": 68,
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/wallet/add-money/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/balance/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/bulk-operations/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/mining/start/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/mining/status/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/mining/stop/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/payment-methods/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/payment-methods/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/payment-methods-crud/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/payment-methods-crud/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/payment-methods-crud/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/wallet/payment-methods-crud/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/wallet/payment-methods-crud/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/wallet/payment-methods-crud/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/payment-methods-crud/{id}/set_primary/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/payment-methods-crud/{id}/verify/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/request-withdrawal/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/statistics/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/summary/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/tasks/cleanup-logs/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/tasks/expire-bonus/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/tasks/generate-report/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/tasks/process-withdrawals/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/tasks/sync-payments/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/transactions/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/transactions/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/transactions/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/wallet/transactions/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/wallet/transactions/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/wallet/transactions/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/transactions/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/transactions/{id}/reject/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/transactions/{id}/reverse/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/transfer/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/user/funds/add/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/user/withdraw/request/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/wallets/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/wallets/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/wallets/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/wallet/wallets/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/wallet/wallets/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/wallet/wallets/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/wallets/{id}/freeze_balance/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/wallets/{id}/lock/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/wallets/{id}/unfreeze_balance/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/wallets/{id}/unlock/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/webhook/bkash/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/webhook/nagad/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/webhook/sslcommerz/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/webhooks/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/webhooks/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/webhooks/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/wallet/webhooks/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/wallet/webhooks/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/wallet/webhooks/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/webhooks/handle_webhook/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/withdraw/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/withdrawals/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/withdrawals-crud/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/withdrawals-crud/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/withdrawals-crud/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/wallet/withdrawals-crud/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/wallet/withdrawals-crud/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/wallet/withdrawals-crud/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/withdrawals-crud/{id}/complete/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/withdrawals-crud/{id}/process/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/wallet/withdrawals-crud/{id}/reject/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallet/withdrawals/{id}/"
+      }
+    ]
+  },
+  {
+    "key": "wallets",
+    "label": "Wallets",
+    "icon": "[WL]",
+    "count": 3,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/wallets/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallets/{id}/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/wallets/balance/"
+      }
+    ]
+  },
+  {
+    "key": "withdrawals",
+    "label": "Withdrawals",
+    "icon": "[WD]",
+    "count": 8,
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/api/withdrawals/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/withdrawals/"
+      },
+      {
+        "method": "GET",
+        "path": "/api/withdrawals/{id}/"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/withdrawals/{id}/"
+      },
+      {
+        "method": "PATCH",
+        "path": "/api/withdrawals/{id}/"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/withdrawals/{id}/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/withdrawals/{id}/approve/"
+      },
+      {
+        "method": "POST",
+        "path": "/api/withdrawals/{id}/reject/"
+      }
+    ]
+  }
+]
