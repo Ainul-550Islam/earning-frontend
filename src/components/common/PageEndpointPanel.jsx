@@ -12,7 +12,7 @@ const METHOD_COLORS = {
   DELETE: { bg: "rgba(61,10,10,0.9)",  text: "#ff3355", border: "#8a0a1a" },
 };
 
-export default function PageEndpointPanel({ pageGroups, title = "API Endpoints" }) {
+export default function PageEndpointPanel({ pageGroups = [], title = "API Endpoints" }) {
   const [open, setOpen]         = useState(false);
   const [search, setSearch]     = useState("");
   const [mFilter, setMFilter]   = useState("ALL");
