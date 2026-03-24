@@ -17,8 +17,12 @@ const axiosInstance = axios.create({
 axiosInstance.interceptors.request.use(
   (config) => {
     try {
-      const token = localStorage.getItem("adminAccessToken");
-      if (token) config.headers.Authorization = `Bearer ${token}`;
+      // Auth endpoints এ token লাগবে না
+      const skipAuth = ['/auth/login', '/auth/register', '/auth/token', '/token/refresh'];
+      const isAuthUrl = skipAuth.some(path => (config.url || '').includes(path));
+        const token = localStorage.getItem("adminAccessToken");
+        if (token) config.headers.Authorization = `Bearer ${token}`;
+      }
     } catch {
       // localStorage unavailable (SSR / incognito) — continue without token
     }
