@@ -46,6 +46,8 @@ const api = {
       Object.entries(paths).forEach(([p, methods]) => {
         const seg = p.replace(/^\/api\//, "").split("/");
         const key = seg[0] || "root";
+        // Skip regex/invalid keys from Django URL patterns
+        if (!key || /[\^\(\)\[\]\?\+\*]/.test(key) || key.includes("<")) return;
         if (!groupMap[key]) groupMap[key] = [];
         Object.keys(methods).forEach(m => {
           const mu = m.toUpperCase();
@@ -72,8 +74,12 @@ const api = {
             schemaEpSet.add(k);
             groupMap[g.key].push({ method: ep.method, path: ep.path, source: "local" });
           } else {
-            const ex = groupMap[g.key].find(e => e.method === ep.method && e.path === ep.path);
-            if (ex) ex.source = "both";
+            let found = false;
+            for (const grpKey of Object.keys(groupMap)) {
+              const ex = groupMap[grpKey].find(e => e.method === ep.method && e.path === ep.path);
+              if (ex) { ex.source = "both"; found = true; break; }
+            }
+            if (!found) groupMap[g.key].push({ method: ep.method, path: ep.path, source: "both" });
           }
         });
       });
@@ -129,7 +135,7 @@ const api = {
 
   bulk: async (toggles) => {
     for (let i = 0; i < toggles.length; i += 200) {
-      await axiosInstance.post("/admin-panel/endpoint-toggles/bulk_toggle/", {
+      await axiosInstance.post("/admin-panel/endpoint-toggles/bulk-toggle/", {
         toggles: toggles.slice(i, i + 200)
       });
     }
@@ -179,6 +185,7 @@ export default function EndpointControl() {
   const [mFilter,      setMFilter]      = useState("ALL");
   const [gFilter,      setGFilter]      = useState("ALL");
   const [selGroup,     setSelGroup]     = useState(null);
+  const [srcFilter,    setSrcFilter]    = useState("ALL");
   const [page,         setPage]         = useState(1);
   const PG = 60;
 
@@ -278,23 +285,25 @@ export default function EndpointControl() {
     if (!selGData) return [];
     return selGData.endpoints.filter(ep =>
       (mFilter === "ALL" || ep.method === mFilter) &&
+      (srcFilter === "ALL" || ep.source === srcFilter || ep.source === "both") &&
       (ep.path.toLowerCase().includes(search.toLowerCase()) ||
        ep.method.toLowerCase().includes(search.toLowerCase()))
     );
-  }, [selGData, search, mFilter]);
+  }, [selGData, search, mFilter, srcFilter]);
 
   const filtAll = useMemo(() =>
     allEndpoints.filter(ep =>
       (mFilter === "ALL" || ep.method === mFilter) &&
       (gFilter === "ALL" || ep.group === gFilter) &&
+      (srcFilter === "ALL" || ep.source === srcFilter || ep.source === "both") &&
       (ep.path.toLowerCase().includes(search.toLowerCase()) ||
        ep.method.toLowerCase().includes(search.toLowerCase()) ||
        (ep.groupLabel||"").toLowerCase().includes(search.toLowerCase()))
-    ), [allEndpoints, search, mFilter, gFilter]);
+    ), [allEndpoints, search, mFilter, gFilter, srcFilter]);
 
   const pages = Math.ceil(filtAll.length / PG);
   const paged = filtAll.slice((page-1)*PG, page*PG);
-  useEffect(() => setPage(1), [search, mFilter, gFilter]);
+  useEffect(() => setPage(1), [search, mFilter, gFilter, srcFilter]);
 
   const EpCard = ({ ep }) => {
     const on   = isOn(ep.method, ep.path);
@@ -350,6 +359,18 @@ export default function EndpointControl() {
           <span className="ec-gcard-dot" style={{ background: col, boxShadow: `0 0 6px ${col}` }} />
           <span className="ec-gcard-count" style={{ color: col }}>{active}</span>
         </div>
+        <div className="ec-gcard-btns" onClick={e => e.stopPropagation()}>
+          <button
+            className={"ec-gcard-btn ec-gcard-btn--on" + (allOn ? " ec-gcard-btn--active" : "")}
+            title="Enable all endpoints in this group"
+            onClick={() => doGroup(group, true)}
+          >ON</button>
+          <button
+            className={"ec-gcard-btn ec-gcard-btn--off" + (allOff ? " ec-gcard-btn--active" : "")}
+            title="Disable all endpoints in this group"
+            onClick={() => doGroup(group, false)}
+          >OFF</button>
+        </div>
         <svg className="ec-gcard-arc" viewBox="0 0 36 36">
           <circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="2.5" />
           <circle cx="18" cy="18" r="15" fill="none"
@@ -390,12 +411,17 @@ export default function EndpointControl() {
 
       <div className="ec-tabs">
         {[
-          ["groups",    "&#x1F5C2; GROUP VIEW",    groups.length],
-          ["endpoints", "&#x1F50C; ALL ENDPOINTS", allEndpoints.length],
-        ].map(([id, lbl, cnt]) => (
+          ["groups",    "&#x1F5C2; GROUP VIEW",    groups.length,      "ALL"],
+          ["endpoints", "&#x1F50C; ALL ENDPOINTS", allEndpoints.length,"ALL"],
+          ["schema",    "&#x2601; SCHEMA",          allEndpoints.filter(e=>e.source==="schema"||e.source==="both").length, "schema"],
+          ["local",     "&#x1F4C4; LOCAL JSON",     allEndpoints.filter(e=>e.source==="local"||e.source==="both").length,  "local"],
+        ].map(([id, lbl, cnt, src]) => (
           <button key={id}
             className={"ec-tab" + (tab === id ? " ec-tab--on" : "")}
-            onClick={() => { setTab(id); setSelGroup(null); setSearch(""); setMFilter("ALL"); setGFilter("ALL"); }}
+            onClick={() => {
+              setTab(id); setSrcFilter(src);
+              setSelGroup(null); setSearch(""); setMFilter("ALL"); setGFilter("ALL");
+            }}
             dangerouslySetInnerHTML={{ __html: lbl + ' <span class="ec-tab-n">' + cnt + '</span>' }}
           />
         ))}
@@ -476,7 +502,7 @@ export default function EndpointControl() {
           </div>
         </div>
 
-      ) : tab === "endpoints" ? (
+      ) : (tab === "endpoints" || tab === "schema" || tab === "local") ? (
         <div>
           <div className="ec-ep-info">
             SHOWING <strong>{filtAll.length}</strong> OF {allEndpoints.length} ENDPOINTS

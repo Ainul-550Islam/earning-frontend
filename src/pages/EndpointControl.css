@@ -249,3 +249,47 @@
   .ec-tabs { width:100%; }
   .ec-tab { flex:1; justify-content:center; padding:10px 8px; font-size:9.5px; }
 }
+
+/* GroupCard ON/OFF buttons */
+.ec-gcard-btns {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 6px;
+  z-index: 10;
+  position: relative;
+}
+
+.ec-gcard-btn {
+  flex: 1;
+  padding: 4px 0;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.35);
+  transition: all 0.18s;
+}
+
+.ec-gcard-btn:hover {
+  transform: scale(1.06);
+}
+
+.ec-gcard-btn--on:hover,
+.ec-gcard-btn--on.ec-gcard-btn--active {
+  background: rgba(0,255,136,0.15);
+  border-color: #00ff88;
+  color: #00ff88;
+  box-shadow: 0 0 8px #00ff8866;
+}
+
+.ec-gcard-btn--off:hover,
+.ec-gcard-btn--off.ec-gcard-btn--active {
+  background: rgba(255,51,85,0.15);
+  border-color: #ff3355;
+  color: #ff3355;
+  box-shadow: 0 0 8px #ff335566;
+}
