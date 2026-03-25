@@ -14,7 +14,7 @@ const useAuth = () => {
 
       if (!token) {
         setLoading(false);
-        navigate('/login');
+        //navigate("/login");
         return;
       }
 
@@ -25,7 +25,7 @@ const useAuth = () => {
         console.error("Auth verification failed", error);
         localStorage.removeItem('adminAccessToken');
         setUser(null);
-        navigate('/login');
+        //navigate("/login");
       } finally {
         setLoading(false);
       }
